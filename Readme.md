@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Баглаева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2091681).
-* Наставник: `Ирина Антипина`.
+* Наставник: `Ирина Антипина https://htmlacademy.ru/profile/id2108789`.
 
 ---
 
