@@ -40,11 +40,105 @@
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <h1 class="">Гостиницы Седоны</h1>
-        <p class="breadcrumbs"><span class="visually-hidden breadcrumbs-home">Домой</span></p>
+    <main class="main-catalog">
+      <header class="catalog-header">
+        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">
+              Гостиницы
+            </a>
+          </li>
+        </ul>
+      </header>
 
+      <section class="filter-wrapper">
+        <h2 class="visually-hidden">Фильтры выбора гостиницы</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="pool" checked>
+                      Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="parking" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="wi-fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="hotel" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="motel">
+                    Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="apartments">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="filter-price-title">Стоимость, ₽:</legend>
+              <label class="control">
+                <input class="control-input" type="number" name="min-price" placeholder="от" value="0">
+              </label>
+              <label class="control">
+                <input class="control-input" type="number" name="max-price" placeholder="до" value="9000">
+              </label>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+          <button class="button" type="submit">Сбросить</button>
+        </form>
+      </section>
+
+      <section class="catalog-products">
+        <h2 class="catalog-products-title">Найдено гостиниц: <span class="number-prodacts">38</span></h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <a href="#" class="button button-dark">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать слайдом</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
       </section>
 
       <section class="subscribe">
