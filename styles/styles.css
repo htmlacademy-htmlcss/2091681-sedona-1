@@ -15,9 +15,27 @@
 }
 
 body {
-    font-family: "PT Sans" sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    text-align: center;
     background-color: #ffffff;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.user-favorites-num {
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+    background-color: #7db54f;
+    border-radius: 50%;
+    padding: 5px;
 }
