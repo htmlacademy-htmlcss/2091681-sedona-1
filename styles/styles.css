@@ -16,15 +16,14 @@
 
 body {
     font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    text-align: center;
     background-color: #ffffff;
 }
 
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -34,7 +33,6 @@ body {
 }
 
 .user-link {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -44,6 +42,7 @@ body {
 }
 
 .user-favorites-num {
+    font-weight: 400;
     font-size: 10px;
     line-height: 10px;
     color: #ffffff;
@@ -53,7 +52,6 @@ body {
 }
 
 .navigation-button {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -69,8 +67,13 @@ body {
     background-image: url("../images/hero/index-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #82b3d3;
     color: #ffffff;
+    background-color: #5582a0;
+    text-align: center;
+}
+
+.advantages {
+    text-align: center;
 }
 
 .subtitle {
@@ -82,6 +85,7 @@ body {
 }
 
 .description-subtitle {
+    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
 }
@@ -95,8 +99,13 @@ body {
 }
 
 .advantages-description {
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+.services {
+    text-align: center;
 }
 
 .services-title {
@@ -108,12 +117,13 @@ body {
 }
 
 .services-description {
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
 
 .color-basic {
-    background-color: rgba(131, 179, 211, 1);
+    background-color: #82b3d3;
     color: #ffffff;
 }
 
@@ -129,8 +139,11 @@ body {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
+.interested {
+    text-align: center;
+}
+
 .interested-button {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -142,11 +155,15 @@ body {
     text-transform: uppercase;
 }
 
+.subscribe {
+    text-align: center;
+}
+
 .subscribe-bg {
     background-image: url("../images/subscribe.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #82b3d3;
+    background-color: #5582a0;
     color: #ffffff;
 }
 
@@ -155,6 +172,8 @@ body {
 }
 
 .subscribe-field {
+    font-family: inherit;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     border: 0;
@@ -165,7 +184,7 @@ body {
 }
 
 .subscribe-button {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -176,11 +195,10 @@ body {
     border-bottom-right-radius: 4px;
     text-transform: uppercase;
     padding: 8px;
-
 }
 
 .socials-link {
-    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
@@ -189,7 +207,7 @@ body {
 }
 
 .phone {
-    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     font-size: 40px;
     line-height: 40px;
     color: #000000;
@@ -198,7 +216,7 @@ body {
 }
 
 .copyright-logo {
-    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
@@ -207,13 +225,13 @@ body {
 }
 
 .catalog-filter-group {
-    border: 0;
+    border: none;
 }
 .catalog-header {
     background-image: url("../images/filter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #82b3d3;
+    background-color: #5582a0;
     color: #ffffff;
 }
 
@@ -224,7 +242,7 @@ body {
 }
 
 .breadcrumbs {
-    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
 }
@@ -241,6 +259,8 @@ body {
    }
 
 .control-input {
+    font-family: inherit;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     background-color: rgba(242, 242, 242, 1);
@@ -263,7 +283,7 @@ body {
 }
 
 .button-filter {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -275,15 +295,17 @@ body {
 }
 
 .apply {
-    background-color: rgba(130, 179, 211, 1);
+    background-color: #82b3d3;
+
 }
 
 .reset {
-    background-color: rgba(130, 179, 211, 0);
+    background-color: transparent;
 }
 
 .select-control {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -291,7 +313,8 @@ body {
 }
 
 .button-show {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-decoration: none;
@@ -299,31 +322,35 @@ body {
     padding: 14px;
 }
 
+/* Раскомментирую в пятом разделе
 .product-item {
     width: 340px;
-}
+}*/
 
 .product-link {
-    font-family: "PT Sans", sans-serif;
+    text-decoration: none;
+}
+
+.product-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-decoration: none;
     color: #000000;
 }
 
 .product-type {
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
 
 .product-price {
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
 
 .product-more {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -336,7 +363,7 @@ body {
 }
 
 .product-to-favorites {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -349,7 +376,7 @@ body {
 }
 
 .product-in-favorites {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -362,6 +389,7 @@ body {
 }
 
 .product-raiting {
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -371,7 +399,6 @@ body {
 }
 
 .pagination-link {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -380,7 +407,7 @@ body {
     background-color: #82b3d3;
 }
 
-.pagination-link.pagination-current {
+.pagination-current {
     color: #000000;
     background-color: #f2f2f2;
 }
