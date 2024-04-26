@@ -14,13 +14,34 @@
     font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-    background-color: #ffffff;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.page-container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  display: flex;
 }
 
 .navigation-link {
@@ -411,3 +432,24 @@ body {
     color: #000000;
     background-color: #f2f2f2;
 }
+
+/* Нужно будет выбрать, какой visually-hidden оставить
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+*/
