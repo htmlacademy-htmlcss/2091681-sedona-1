@@ -1,17 +1,17 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 html {
@@ -61,85 +61,85 @@ body {
 }
 
 .navigation-link {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .user-link {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .user-favorites-num {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 10px;
-    color: #ffffff;
-    background-color: #7db54f;
-    border-radius: 50%;
-    padding: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .navigation-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #756157;
-    border-radius: 4px;
-    text-decoration: none;
-    padding: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px;
 }
 
 .hero {
-    width: 1200px;
-    background-image: url("../images/hero/index-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    background-color: #5582a0;
-    text-align: center;
+  width: 1200px;
+  background-image: url("../images/hero/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #5582a0;
+  text-align: center;
 }
 
 .advantages {
-    text-align: center;
+  text-align: center;
 }
 
 .subtitle {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .description-subtitle {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .advantages-title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .advantages-description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .advantages-list {
@@ -161,38 +161,38 @@ body {
 }
 
 .services {
-    text-align: center;
+  text-align: center;
 }
 
 .services-title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .services-description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .color-basic {
-    background-color: #82b3d3;
-    color: #ffffff;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .color-basic .advantages-title {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .color-light {
-    background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .color-pale {
-    background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .services-list {
@@ -209,19 +209,19 @@ body {
 }
 
 .interested {
-    text-align: center;
+  text-align: center;
 }
 
 .interested-button {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    color: #ffffff;
-    background-color: #756157;
-    border-radius: 4px;
-    text-decoration: none;
-    padding: 8px;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px;
+  text-transform: uppercase;
 }
 
 .subscribe {
@@ -229,275 +229,310 @@ body {
 }
 
 .subscribe-bg {
-    background-image: url("../images/subscribe.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #5582a0;
-    color: #ffffff;
+  background-image: url("../images/subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #5582a0;
+  color: #ffffff;
 }
 
 .subscribe-bg .subtitle {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .subscribe-field {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    border: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    background-color: #f2f2f2;
-    padding: 14px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 14px;
 }
 
 .subscribe-button {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    color: #ffffff;
-    background-color: #82b3d3;
-    border: 0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    text-transform: uppercase;
-    padding: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-transform: uppercase;
+  padding: 8px;
 }
 
 .socials-link {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .phone {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .copyright-logo {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.page-footer {
+  width: 1060px;
+  margin: 40px 70px 30px 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-filter-group {
-    border: none;
+  border: none;
 }
 .catalog-header {
-    background-image: url("../images/filter.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #5582a0;
-    color: #ffffff;
+  background-image: url("../images/filter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #5582a0;
+  color: #ffffff;
 }
 
 .catalog-heading {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
 }
 
 .breadcrumbs {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .breadcrumbs-link {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .catalog-filter-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
    }
 
 .control-input {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    background-color: #f2f2f2;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #f2f2f2;
 }
 
 .cost {
-    font-weight: 700;
-    line-height: 24px;
-    color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
 }
 
 .from {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .to {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .button-filter {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    border: 0;
-    border-radius: 4px;
-    text-transform: uppercase;
-    padding: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 8px;
 }
 
 .apply {
-    background-color: #82b3d3;
-
+  background-color: #82b3d3;
 }
 
 .reset {
-    background-color: transparent;
+  background-color: transparent;
+}
+
+.sorting {
+  width: 1060px;
+  display: flex;
+}
+
+.catalog-title {
+  width: 1060px;
+  margin: auto;
+}
+
+.catalog-filter {
+  width: 1060px;
+  margin: auto;
+  display: flex;
 }
 
 .select-control {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-    padding: 14px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 14px;
 }
 
 .button-show {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration: none;
-    color: #333333;
-    padding: 14px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #333333;
+  padding: 14px;
 }
 
-/* Раскомментирую в пятом разделе
+.catalog-products {
+  width: 1060px;
+  margin: auto;
+}
+
+.select-control {
+  height: 49px;         /*Нужно ли указывать высоту рамки вокруг сортировки? Это flex элемент*/
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+}
+
 .product-item {
-    width: 340px;
-}*/
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  margin: 0px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.product-card {
+  width: 300px;
+  margin: auto;
+}
 
 .product-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .product-title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  order: -1;
 }
 
 .product-type {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .product-price {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .product-more {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #756157;
-    border-radius: 4px;
-    text-decoration: none;
-    padding: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px;
 }
 
 .product-to-favorites {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #82b3d3;
-    border: 0;
-    border-radius: 4px;
-    text-transform: uppercase;
-    padding: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 8px;
 }
 
 .product-in-favorites {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #7db54f;
-    border: 0;
-    border-radius: 4px;
-    text-transform: uppercase;
-    padding: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 8px;
 }
 
-.product-raiting {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    padding: 8px;
+.product-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.pagination {
+  width: 1060px;
+  display: flex;
 }
 
 .pagination-link {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .pagination-current {
-    color: #000000;
-    background-color: #f2f2f2;
+  color: #000000;
+  background-color: #f2f2f2;
 }
-
-/* Нужно будет выбрать, какой visually-hidden оставить
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-}
-*/
