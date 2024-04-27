@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -30,6 +31,7 @@ body {
 
 .page-container {
   width: 1200px;
+  min-height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -41,7 +43,16 @@ body {
 }
 
 .page-header {
+  margin: 0 70px;
   display: flex;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.navigation {
+  margin-right: auto;
 }
 
 .navigation-link {
@@ -85,6 +96,7 @@ body {
 }
 
 .hero {
+    width: 1200px;
     background-image: url("../images/hero/index-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
