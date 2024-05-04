@@ -26,12 +26,12 @@
           <ul class="user-list">
             <li class="user-item">
               <a class="user-link user-link-search" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="user-item">
               <a class="user-link user-link-favorites" href="#">
-                <span class="visually-hidden">Количество отелей в избранном</span>
+                <span class="visually-hidden">Количество отелей в избранном.</span>
                 <span class="user-favorites-num">12</span>
               </a>
             </li>
@@ -49,7 +49,7 @@
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <span class="visually-hidden">Главная</span>
+                  <span class="visually-hidden">Главная.</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -64,7 +64,7 @@
             <h2 class="visually-hidden">Фильтры выбора гостиницы</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -88,7 +88,7 @@
                   </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group housing-type">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -112,13 +112,13 @@
                   </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group cost">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <label class="control" >от
-                    <input class="control-input cost from" type="number" name="min-price" value="0">
+                    <input class="control-input cost-field from" type="number" name="min-price" value="0">
                   </label>
                   <label class="control">до
-                    <input class="control-input cost to" type="number" name="max-price" value="9000">
+                    <input class="control-input cost-field to" type="number" name="max-price" value="9000">
                   </label>
               </fieldset>
 
@@ -139,13 +139,13 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <a href="#" class="button-show button-show-active">
-              <span class="visually-hidden">Показать карточки</span>
+              <span class="visually-hidden">Показать карточки.</span>
             </a>
             <a class="button-show" href="#">
-              <span class="visually-hidden">Показать слайды</span>
+              <span class="visually-hidden">Показать слайды.</span>
             </a>
             <a class="button-show" href="#">
-              <span class="visually-hidden">Показать список</span>
+              <span class="visually-hidden">Показать список.</span>
             </a>
           </div>
 
@@ -254,11 +254,11 @@
         </section>
 
         <section class="subscribe">
-          <h2 class="subtitle">Подпишитесь на рассылку</h2>
-          <p class="description-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <h2 class="subtitle subscribe-subtitle">Подпишитесь на рассылку</h2>
+          <p class="description-subtitle subscribe-description-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action=" https://echo.htmlacademy.ru/" method="post">
-            <label>
-              <span class="visually-hidden">Ваш e-mail</span>
+            <label class="subscribe-input-field">
+              <span class="visually-hidden">Ваш e-mail.</span>
               <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш e-mail" required>
             </label>
             <button class="subscribe-button" type="submit">Подписаться</button>
