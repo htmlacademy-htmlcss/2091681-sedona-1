@@ -175,6 +175,7 @@ body {
 }
 
 .advantages-subtitle {
+  padding: 0 290px;
   margin-top: 69px;
   margin-bottom: 25px;
 }
@@ -245,6 +246,7 @@ body {
 }
 
 .services-subtitle {
+  padding: 0 347px;
   margin-top: 64px;
   margin-bottom: 20px;
 }
@@ -300,10 +302,16 @@ body {
 
 .interested {
   text-align: center;
-  padding: 96px 304px;
+  padding: 96px 0;
+}
+
+.interested-wrapper {
+  width: 592px;
+  margin: 0 auto;
 }
 
 .interested-subtitle {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -313,8 +321,6 @@ body {
 }
 
 .interested-button {
-  display: block;
-  width: 376px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -322,7 +328,7 @@ body {
   background-color: #756157;
   border-radius: 4px;
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 50px;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
@@ -354,16 +360,23 @@ body {
   color: #ffffff;
 }
 
+.subscribe-form{
+  width: 684px;
+  display: flex;
+}
+
 .subscribe-field {
+  width: 452px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  border: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   background-color: #f2f2f2;
   padding: 14px;
+  box-sizing: border-box;
+  border: none;
 }
 
 .subscribe-button {
@@ -488,12 +501,6 @@ body {
   min-width: 288px;
 }
 
-.filter-buttons {
-  width: 191px;
-  margin-left: 70px;
-  align-self: end;
-}
-
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -524,9 +531,13 @@ body {
 
 .cost-field {
   width: 143px;
+  min-height: 48px;
+  box-sizing: border-box;
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  padding: 12px 20px;
+  border: none;
 }
 
 .from {
@@ -537,6 +548,12 @@ body {
 .to {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.filter-buttons {
+  width: 191px;
+  margin-left: 70px;
+  align-self: end;
 }
 
 .filter-button {
