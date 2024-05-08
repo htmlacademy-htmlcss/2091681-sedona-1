@@ -68,6 +68,7 @@ body {
   display: block;
   width: 140px;
   margin-right: 28px;
+  margin-bottom: -6px;
 }
 
 .navigation-list {
@@ -124,7 +125,7 @@ body {
   background-color: #7db54f;
   border-radius: 50%;
   margin: 0;
-  padding: 5px;
+  padding: 4px 5px;
 }
 
 .user-button {
@@ -143,8 +144,6 @@ body {
 }
 
 .hero {
-  width: 1200px;
-  min-height: 485px;
   background-image: url("../images/hero/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,15 +153,22 @@ body {
 }
 
 .hero-title {
+  display: block;
   width: 458px;
-  margin: 0;
+  height: auto;
+  margin: 0 auto;
   padding-top: 51px;
   padding-bottom: 82px;
-  margin-bottom: ;
 }
 
 .advantages {
   text-align: center;
+}
+
+.advantages-wrapper {
+  width: 652px;
+  margin: 0 auto;
+  padding: 69px 0;
 }
 
 .subtitle {
@@ -175,8 +181,6 @@ body {
 }
 
 .advantages-subtitle {
-  padding: 0 290px;
-  margin-top: 69px;
   margin-bottom: 25px;
 }
 
@@ -184,12 +188,10 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
 }
 
 .advantages-description-subtitle {
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin: 0;
 }
 
 .advantages-heading {
@@ -198,8 +200,7 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 62px;
+  margin: 0 0 30px 0;
 }
 
 .advantages-description {
@@ -213,7 +214,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 21px 0 0 0;
   list-style: none;
 }
 
@@ -245,16 +246,19 @@ body {
   text-align: center;
 }
 
+.services-wrapper {
+  width: 505px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
 .services-subtitle {
-  padding: 0 347px;
-  margin-top: 64px;
   margin-bottom: 20px;
 }
 
 .services-description-subtitle {
-  margin-top: 0;
-  margin-bottom: 64px;
-}
+  margin: 0;
+ }
 
 .services-heading {
   font-weight: 700;
@@ -262,12 +266,14 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0 0 30px 0;
 }
 
 .services-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .color-basic {
@@ -288,7 +294,6 @@ body {
 }
 
 .services-list {
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -302,12 +307,12 @@ body {
 
 .interested {
   text-align: center;
-  padding: 96px 0;
 }
 
 .interested-wrapper {
   width: 592px;
   margin: 0 auto;
+  padding: 96px 0;
 }
 
 .interested-subtitle {
@@ -336,7 +341,12 @@ body {
 
 .subscribe {
   text-align: center;
-  padding: 96px 258px 104px;
+}
+
+.subscribe-wrapper {
+  width: 684px;
+  margin: 0 auto;
+  padding: 96px 0 104px;
 }
 
 .subscribe-subtitle {
@@ -580,12 +590,11 @@ body {
 }
 
 .catalog-products {
-  padding: 0 70px;
+  padding: 50px 70px 0;
 }
 
 .sorting {
   display: flex;
-  margin: 50px 0 40px;
 }
 
 .sorting .subtitle {
@@ -621,8 +630,8 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   margin: 0;
-  padding: 0;
-  margin-bottom: 80px;
+  padding: 40px 0 80px;
+
 }
 
 .product-item {
@@ -648,6 +657,11 @@ body {
   order: 1;
   padding: 16px 0;
   margin: 0;
+}
+
+.product-image {
+  width: 300px;
+  height: auto;
 }
 
 .product-type-price {
@@ -685,7 +699,10 @@ body {
   background-color: #756157;
   border-radius: 4px;
   text-decoration: none;
-  padding: 8px;
+  text-align: center;
+  padding: 8px 0;
+  display: block;
+  width: 140px;
 }
 
 .product-to-favorites {
@@ -698,7 +715,9 @@ body {
   border: 0;
   border-radius: 4px;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 8px 0;
+  display: block;
+  width: 140px;
 }
 
 .product-in-favorites {
@@ -711,7 +730,9 @@ body {
   border: 0;
   border-radius: 4px;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 8px 0;
+  display: block;
+  width: 140px;
 }
 
 .product-category {
@@ -727,12 +748,15 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border-radius: 4px;
-  padding: 8px;
+  padding: 8px 0;
+  display: block;
+  width: 140px;
 }
 
 .pagination {
   width: 1060px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 0;
   margin: 0;
@@ -756,6 +780,7 @@ body {
   background-color: #82b3d3;
   text-align: center;
   padding: 12px 0;
+  border-radius: 4px;
 }
 
 .pagination-ellipsis {
