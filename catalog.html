@@ -64,23 +64,26 @@
             <h2 class="visually-hidden">Фильтры выбора гостиницы</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="catalog-filter-group infrastructure">
+              <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
+                        <span class="control-checkbox"></span>
                         <input class="control-input" type="checkbox" name="pool" checked>
                           Бассейн
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
+                        <span class="control-checkbox"></span>
                         <input class="control-input" type="checkbox" name="parking" checked>
                         Парковка
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
+                        <span class="control-checkbox"></span>
                         <input class="control-input" type="checkbox" name="wi-fi">
                         Wi-Fi
                       </label>
@@ -112,16 +115,28 @@
                   </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group cost">
+              <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="control-cost">
-                    <input class="control-input cost-field cost-from" type="number" name="min-price" value="0">
-                    <span class="cost-text">от</span>
-                  </label>
-                  <label class="control-cost">
-                    <input class="control-input cost-field cost-to" type="number" name="max-price" value="9000">
-                    <span class="cost-text">до</span>
-                  </label>
+                  <div class="cost-min-max">
+                    <label class="control-cost">
+                      <input class="control-input cost-field cost-from" type="number" name="min-price" value="0">
+                      <span class="cost-text">от</span>
+                    </label>
+                    <label class="control-cost">
+                      <input class="control-input cost-field cost-to" type="number" name="max-price" value="9000">
+                      <span class="cost-text">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
               </fieldset>
 
               <div class="filter-buttons">
