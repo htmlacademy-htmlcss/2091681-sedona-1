@@ -187,5 +187,36 @@
         </a>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="search-form-field">
+              <span class="date-label">Дата заезда</span>
+              <input class="date-field" type="date" name="date-field" value="2020-04-27" required>
+            </label>
+            <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+            <label class="search-form-field">
+              <span class="date-label">Дата выезда</span>
+              <input class="date-field" type="date" name="date-field" value="2023-09-01" required>
+            </label>
+            <p class="success-message">На эти даты есть свободные номера. Пока есть</p>
+            <label class="search-form-field">
+              <span class="date-label">Взрослые:</span>
+              <input class="date-field" type="number" name="date-field" value="2024-09-01" required>
+            </label>
+            <label class="search-form-field">
+              <span class="date-label">Дети:</span>
+              <input class="date-field" type="number" name="date-field" value="2024-09-01" required>
+            </label>
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
