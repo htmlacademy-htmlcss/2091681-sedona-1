@@ -834,7 +834,6 @@ body {
   opacity: 0.6;
 }
 
-
 .control-element:focus-visible { /*Нужно ли указывать состояние focus-visible, если оно такое же как сосотяние покоя?*/
   opacity: 1;
 }
@@ -923,7 +922,6 @@ body {
   position: relative;
 }
 
-
 .cost-field {
   width: 143px;
   min-height: 48px;
@@ -950,7 +948,6 @@ body {
 .cost-from {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  margin-right: 2px;
 }
 
 .cost-to {
@@ -961,7 +958,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -981,10 +978,12 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:focus-visible {
-  -moz-background: red;
-  -webkit-outline: 3px solid green;
-  outline: 2px solid blue;;
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
 }
 
 .range-toggle:active {
@@ -1073,6 +1072,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
   padding: 12px 20px;
   padding-right: 40px;
   width: 292px;
@@ -1096,8 +1096,9 @@ body {
   border-color: #3f5e72;
 }
 
-.select-control:disabled {
-  border-color: #68a2ca;
+.select-control[disabled] {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .button-show-list{
@@ -1441,15 +1442,20 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.close-button-icon {
+  fill: #000000;
 }
 
 .modal-close-button:hover,
 .modal-close-button:focus-visible {
   background-color: #e6e6e6;
+}
+
+.modal-close-button:active .close-button-icon {
+  fill: rgba(0,0,0,0.3);
 }
 
 .modal-title {
@@ -1493,13 +1499,17 @@ body {
   background-repeat: no-repeat;
   background-position: 402px 16px;
   padding: 12px 20px;
-
   box-sizing: border-box;
   border: none;
 }
 
-.date-field:hover  {
- background-color: #e6e6e6;
+.date-field:hover,
+.date-field:focus-visible  {
+  background-color: #e6e6e6;
+}
+
+.date-field:active  {
+  outline: 2px solid #000000;
 }
 
 .date-search {
@@ -1575,6 +1585,7 @@ body {
   margin: 0;
   word-break: break-all;
   padding-right: 10px;
+  background-color: transparent;
 }
 
 .tooltip {
@@ -1661,6 +1672,26 @@ body {
   border: none;
   border-radius: 4px;
   appearance: textfield;
+}
+
+.number-field::-webkit-outer-spin-button,
+.number-field::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.number-field {
+  width: 30px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 12px 3px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  appearance: textfield;
   z-index: 2;
 }
 
@@ -1678,7 +1709,8 @@ body {
   justify-content: space-between;
 }
 
-.number-minus {
+.number-minus,
+.number-plus {
   width: 38px;
   height: 48px;
   font-family: inherit;
@@ -1707,25 +1739,26 @@ body {
   left: 10px;
 }
 
-.number-minus:hover.number-minus::after {
+.number-minus:hover.number-minus::after,
+.number-minus:focus-visible.number-minus::after {
   background-color: #000000;
 }
 
-.number-plus {
-  width: 38px;
-  height: 48px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: #f2f2f2;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 14px 10px;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 4px;
+.number-plus::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(117, 97, 87, 0.3);
+  mask-image: url("../images/plus.svg");
+  mask-repeat: no-repeat;
+  top: 14px;
+  left: 10px;
+}
+
+.number-plus:hover.number-plus::after,
+.number-plus:focus-visible.number-plus::after {
+  background-color: #000000;
 }
 
 .search-button {
