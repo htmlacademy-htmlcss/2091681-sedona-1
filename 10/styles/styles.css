@@ -1744,6 +1744,10 @@ body {
   background-color: #000000;
 }
 
+.number-minus:active.number-minus::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .number-plus::after {
   content: "";
   position: absolute;
@@ -1760,6 +1764,11 @@ body {
 .number-plus:focus-visible.number-plus::after {
   background-color: #000000;
 }
+
+.number-plus:active.number-plus::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 .search-button {
   display: inline-block;
