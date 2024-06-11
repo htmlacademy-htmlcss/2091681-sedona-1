@@ -191,9 +191,9 @@
       <div class="modal">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
-          <svg class="close-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="close-button-icon" width="15" height="15" viewBox="0 0 15 15"  xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
-            </svg>
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -208,20 +208,20 @@
               <input class="date-field" type="text" name="date-field" value="1 сентября 2023" placeholder="Укажите дату" required>
             </label>
             <p class="success-message">На эти даты есть свободные номера. Пока есть.</p>
-            <div class="search-form-number-blok">
-              <label class="search-form-number">
-                <span class="number-label-adult">
-                  <span class=" number-label">Взрослые:</span>
-                </span>
-                <div class="minus-plus">
+            <div class="search-form-number-block">
+              <div class="number-block">
+                <label class="number-label" for="number-input-adult" >
+                  <span class="number-label-adult">Взрослые:</span>
+                </label>
+                <div class="minus-plus-block">
                   <button class="number-minus" type="button"><span class="visually-hidden">Уменьшите количество</span></button>
-                  <input class="number-field" type="number" name="adult-number" min="1" value="2" required>
+                  <input class="number-field" type="number" name="number" min="1" value="2" id="number-input-adult" required>
                   <button class="number-plus" type="button"><span class="visually-hidden">Увеличьте количество</span></button>
                 </div>
-              </label>
-              <label class="search-form-number">
-                <span class="number-label-children">
-                  <span class="number-label">Дети:</span>
+              </div>
+              <div class="number-block">
+                <label class="number-label number-label-group" for="number-input-children">
+                  <span class="number-label-children">Дети:</span>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
                       <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,13 +231,13 @@
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
-                </span>
-                <div class="minus-plus">
+                </label>
+                <div class="minus-plus-block">
                   <button class="number-minus" type="button"><span class="visually-hidden">Уменьшите количество</span></button>
-                  <input class="number-field" type="number" name="children-number" min="0" value="2">
+                  <input class="number-field" type="number" name="number" min="1" value="2" id="number-input-children" required>
                   <button class="number-plus" type="button"><span class="visually-hidden">Увеличьте количество</span></button>
                 </div>
-              </label>
+              </div>
             </div>
             <button class="search-button" type="submit">Найти</button>
           </form>
