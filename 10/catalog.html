@@ -117,20 +117,20 @@
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="cost-min-max">
                     <label class="control-cost">
-                      <input class="control-input-cost cost-field cost-from" type="number" name="min-price" value="0">
+                      <input class="control-input-cost cost-field cost-from" type="number" name="min-price" min="0" value="0">
                       <span class="cost-text">от</span>
                     </label>
                     <label class="control-cost">
-                      <input class="control-input-cost cost-field cost-to" type="number" name="max-price" value="9000">
+                      <input class="control-input-cost cost-field cost-to" type="number" name="max-price" max="9000" value="9000">
                       <span class="cost-text">до</span>
                     </label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>

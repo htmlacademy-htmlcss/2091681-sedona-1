@@ -112,17 +112,17 @@ body {
   margin-right: 2px;
 }
 
-  .navigation-link:hover {
-    opacity: 0.6;
-  }
+.navigation-link:hover {
+  opacity: 0.6;
+}
 
-  .navigation-link:focus-visible {
-    opacity: 0.6;
-  }
+.navigation-link:focus-visible {
+  opacity: 0.6;
+}
 
-  .navigation-link:active {
-    opacity: 0.3;
-  }
+.navigation-link:active {
+  opacity: 0.3;
+}
 
 .navigation-link-current::after {
   position: absolute;
@@ -132,7 +132,6 @@ body {
   left: 16px;
   height: 2px;
   background-color: #756257;
-
 }
 
 .user-list {
@@ -161,7 +160,6 @@ body {
   padding: 22px 10px 22px 12px;
   box-sizing: border-box;
   margin-right: 2px;
-  /*outline: 1px solid #5582a0;*/
 }
 
 .user-link:hover {
@@ -836,7 +834,6 @@ body {
   opacity: 0.6;
 }
 
-
 .control-element:focus-visible { /*Нужно ли указывать состояние focus-visible, если оно такое же как сосотяние покоя?*/
   opacity: 1;
 }
@@ -925,7 +922,6 @@ body {
   position: relative;
 }
 
-
 .cost-field {
   width: 143px;
   min-height: 48px;
@@ -952,7 +948,6 @@ body {
 .cost-from {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  margin-right: 2px;
 }
 
 .cost-to {
@@ -963,7 +958,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -983,10 +978,12 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:focus-visible {
-  -moz-background: red;
-  -webkit-outline: 3px solid green;
-  outline: 2px solid blue;;
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
 }
 
 .range-toggle:active {
@@ -1075,6 +1072,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
   padding: 12px 20px;
   padding-right: 40px;
   width: 292px;
@@ -1098,8 +1096,9 @@ body {
   border-color: #3f5e72;
 }
 
-.select-control:disabled {
-  border-color: #68a2ca;
+.select-control[disabled] {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .button-show-list{
@@ -1406,6 +1405,9 @@ body {
 
 .modal-container {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
@@ -1440,10 +1442,20 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.close-button-icon {
+  fill: #000000;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus-visible {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active .close-button-icon {
+  fill: rgba(0,0,0,0.3);
 }
 
 .modal-title {
@@ -1464,7 +1476,6 @@ body {
 }
 
 .date-label {
-  display: inline-block;
   width: 127px;
   padding-right: 10px;
   font-family: inherit;
@@ -1476,18 +1487,29 @@ body {
 }
 
 .date-field {
-  width: 380px;
+  width: 440px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-radius: 4px;
   color: #000000;
   background-color: #f2f2f2;
+  background-image: url("../images/date.svg");
+  background-repeat: no-repeat;
+  background-position: 402px 16px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: none;
+}
+
+.date-field:hover,
+.date-field:focus-visible  {
+  background-color: #e6e6e6;
+}
+
+.date-field:active  {
+  outline: 2px solid #000000;
 }
 
 .date-search {
@@ -1533,7 +1555,6 @@ body {
 
 .search-form-number-blok {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 48px;
   gap: 4px;
@@ -1544,6 +1565,18 @@ body {
   align-items: center;
 }
 
+.number-label-adult {
+  width: 127px;
+  padding-right: 10px;
+}
+
+.number-label-children {
+  width: 132px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 46px;
+}
+
 .number-label {
   font-family: inherit;
   font-weight: 700;
@@ -1552,15 +1585,7 @@ body {
   margin: 0;
   word-break: break-all;
   padding-right: 10px;
-}
-
-.number-label-adult {
-  width: 127px;
-}
-
-.number-label-children {
-  width: 132px;
-  display: flex;
+  background-color: transparent;
 }
 
 .tooltip {
@@ -1568,6 +1593,7 @@ body {
   margin-top: 1px;
   width: 26px;
   height: 26px;
+  flex-shrink: 0;
 }
 
 .tooltip-toggle {
@@ -1576,6 +1602,7 @@ body {
   padding: 0;
   margin: 0;
   display: block;
+  border-radius: 4px;
 }
 
 .tooltip-icon {
@@ -1633,7 +1660,7 @@ body {
 }
 
 .number-field {
-  width: 31px;
+  width: 30px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1643,6 +1670,7 @@ body {
   padding: 12px 3px;
   box-sizing: border-box;
   border: none;
+  border-radius: 4px;
   appearance: textfield;
 }
 
@@ -1651,41 +1679,86 @@ body {
   appearance: none;
 }
 
-.number-minus {
-  width: 40px;
-  height: 48px;
+.number-field {
+  width: 30px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   background-color: #f2f2f2;
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 14px 10px;
+  padding: 12px 3px;
   box-sizing: border-box;
   border: none;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-
+  border-radius: 4px;
+  appearance: textfield;
+  z-index: 2;
 }
 
+.number-field::-webkit-outer-spin-button,
+.number-field::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.minus-plus {
+  display: flex;
+  background: #f2f2f2;
+  width: 110px;
+  height: 48px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.number-minus,
 .number-plus {
-  width: 40px;
+  width: 38px;
   height: 48px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
-  background-image: url("../images/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding: 14px 10px;
   box-sizing: border-box;
   border: none;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.number-minus::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(117, 97, 87, 0.3);
+  mask-image: url("../images/minus.svg");
+  mask-repeat: no-repeat;
+  top: 14px;
+  left: 10px;
+}
+
+.number-minus:hover.number-minus::after,
+.number-minus:focus-visible.number-minus::after {
+  background-color: #000000;
+}
+
+.number-plus::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(117, 97, 87, 0.3);
+  mask-image: url("../images/plus.svg");
+  mask-repeat: no-repeat;
+  top: 14px;
+  left: 10px;
+}
+
+.number-plus:hover.number-plus::after,
+.number-plus:focus-visible.number-plus::after {
+  background-color: #000000;
 }
 
 .search-button {
