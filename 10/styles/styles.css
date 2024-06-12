@@ -166,6 +166,10 @@ body {
   opacity: 0.6;
 }
 
+.user-link:focus-visible {
+  opacity: 0.6;
+}
+
 .user-link:active {
   opacity: 0.3;
 }
@@ -228,6 +232,10 @@ body {
 .user-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
+}
+
+.user-button[disabled] {
+  background-color: #e5e5e5;
 }
 
 .main-container {
@@ -435,7 +443,6 @@ body {
   margin: 0;
 }
 
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -496,6 +503,10 @@ body {
 .interested-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
+}
+
+.interested-button[disabled] {
+  background-color: #e5e5e5;
 }
 
 .subscribe {
@@ -588,6 +599,10 @@ body {
 .subscribe-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
+}
+
+.subscribe-button[disabled] {
+  background-color: #e5e5e5;
 }
 
 .page-footer {
@@ -829,18 +844,15 @@ body {
   gap: 16px;
   padding: 1px 0;
 }
-
+/**
 .control-element:hover {
   opacity: 0.6;
-}
-
-.control-element:focus-visible { /*Нужно ли указывать состояние focus-visible, если оно такое же как сосотяние покоя?*/
-  opacity: 1;
 }
 
 .control-element:active {
   opacity: 0.3;
 }
+*/
 
 .control-input-infrastructure {
   width: 20px;
@@ -851,6 +863,10 @@ body {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+.control-input-infrastructure:hover {
+  opacity: 0.6;
 }
 
 .control-input-infrastructure:checked {
@@ -886,32 +902,6 @@ body {
   appearance: none;
 }
 
-.control-input-cost {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  background-color: #f2f2f2;
-  -moz-appearance: textfield;
-}
-
-.control-input-cost:hover {
-  background-color: #e6e6e6;
-}
-
-.control-input-cost:focus-visible {
-  background-color: #e6e6e6;
-}
-
-.control-input-cost:active {
-  outline: 2px solid #000000;
-}
-
-.control-input-cost::-webkit-outer-spin-button,
-.control-input-cost::-webkit-inner-spin-button {
-  appearance: none;
-}
-
 .cost-min-max {
   display: flex;
   gap: 2px;
@@ -920,17 +910,6 @@ body {
 
 .control-cost {
   position: relative;
-}
-
-.cost-field {
-  width: 143px;
-  min-height: 48px;
-  box-sizing: border-box;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-  padding: 12px 20px;
-  border: none;
 }
 
 .cost-text {
@@ -945,6 +924,26 @@ body {
   opacity: 0.3;
 }
 
+.control-input-cost {
+  width: 143px;
+  min-height: 48px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  padding: 12px 20px;
+  border: none;
+  -moz-appearance: textfield;
+}
+
+.control-input-cost::-webkit-outer-spin-button,
+.control-input-cost::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .cost-from {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -953,6 +952,18 @@ body {
 .cost-to {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.control-input-cost:hover {
+  background-color: #e6e6e6;
+}
+
+.control-input-cost:focus-visible {
+  background-color: #e6e6e6;
+}
+
+.control-input-cost:active {
+  outline: 2px solid #000000;
 }
 
 .range-scale {
@@ -982,7 +993,7 @@ body {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:active {
+.range-toggle:focus-visible {
   outline: 2px solid #83b3d3;
 }
 
@@ -1038,6 +1049,10 @@ body {
   background-color: #82b3d3;
 }
 
+.apply[disabled] {
+  background-color: #e5e5e5;
+}
+
 .reset {
   background-color: transparent;
 }
@@ -1048,6 +1063,10 @@ body {
 
 .reset:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.reset[disabled] {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .catalog-products {
@@ -1131,7 +1150,6 @@ body {
   border-color: #000000;
 }
 
-
 .button-show:active {
   border-color: #000000;
 }
@@ -1157,7 +1175,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 
 .product-list {
   display: grid;
@@ -1217,7 +1234,7 @@ body {
 }
 
 .product-image:active {
-  opacity: 0.63;
+  opacity: 0.6;
 }
 
 .product-type {
@@ -1255,6 +1272,10 @@ body {
   background-color: 756157;
 }
 
+.product-more[disabled] {
+  background-color: #e5e5e5;
+}
+
 .product-to-favorites {
   display: inline-block;
   font-family: inherit;
@@ -1279,6 +1300,10 @@ body {
   background-color: #82b3d3;
 }
 
+.product-to-favorites[disabled] {
+  background-color: #e5e5e5;
+}
+
 .product-in-favorites {
   display: inline-block;
   font-family: inherit;
@@ -1301,6 +1326,10 @@ body {
 .product-in-favorites:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #7db54f;
+}
+
+.product-in-favorites[disabled] {
+  background-color: #e5e5e5;
 }
 
 .product-rating {
@@ -1404,7 +1433,7 @@ body {
 }
 
 .modal-container {
-  position: fixed;
+  /*position: fixed;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1443,6 +1472,9 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .close-button-icon {
@@ -1553,31 +1585,21 @@ body {
   color: #333333;
 }
 
-.search-form-number-blok {
+.search-form-number-block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
-  gap: 4px;
+  gap: 50px;
 }
 
-.search-form-number {
+.number-block {
   display: flex;
   align-items: center;
 }
 
-.number-label-adult {
-  width: 127px;
-  padding-right: 10px;
-}
-
-.number-label-children {
-  width: 132px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 46px;
-}
-
 .number-label {
+  display: flex;
+  align-items: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -1588,12 +1610,29 @@ body {
   background-color: transparent;
 }
 
+.number-label-adult {
+  width: 127px;
+}
+
+.number-label-children {
+  padding-right: 10px;
+}
+
+.number-label-group {
+  justify-content: flex-end;
+  margin-right: 36px;
+}
+
 .tooltip {
   position: relative;
   margin-top: 1px;
   width: 26px;
   height: 26px;
   flex-shrink: 0;
+}
+
+.tooltip-toggle:focus-visible {
+  border-radius: 50%;
 }
 
 .tooltip-toggle {
@@ -1679,28 +1718,7 @@ body {
   appearance: none;
 }
 
-.number-field {
-  width: 30px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  background-color: #f2f2f2;
-  padding: 12px 3px;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 4px;
-  appearance: textfield;
-  z-index: 2;
-}
-
-.number-field::-webkit-outer-spin-button,
-.number-field::-webkit-inner-spin-button {
-  appearance: none;
-}
-
-.minus-plus {
+.minus-plus-block {
   display: flex;
   background: #f2f2f2;
   width: 110px;
@@ -1712,7 +1730,6 @@ body {
 .number-minus,
 .number-plus {
   width: 38px;
-  height: 48px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1720,7 +1737,7 @@ body {
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 14px 10px;
+  margin: 14px 10px;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
@@ -1735,12 +1752,12 @@ body {
   background-color: rgba(117, 97, 87, 0.3);
   mask-image: url("../images/minus.svg");
   mask-repeat: no-repeat;
-  top: 14px;
-  left: 10px;
+  top: 0;
+  left: 0;
 }
 
-.number-minus:hover.number-minus::after,
-.number-minus:focus-visible.number-minus::after {
+.number-minus:hover::after,
+.number-minus:focus-visible::after {
   background-color: #000000;
 }
 
@@ -1756,19 +1773,18 @@ body {
   background-color: rgba(117, 97, 87, 0.3);
   mask-image: url("../images/plus.svg");
   mask-repeat: no-repeat;
-  top: 14px;
-  left: 10px;
+  top: 0;
+  left: 0;
 }
 
-.number-plus:hover.number-plus::after,
-.number-plus:focus-visible.number-plus::after {
+.number-plus:hover::after,
+.number-plus:focus-visible::after {
   background-color: #000000;
 }
 
-.number-plus:active.number-plus::after {
+.number-plus:active::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .search-button {
   display: inline-block;
@@ -1784,4 +1800,17 @@ body {
   width: 577px;
   padding: 8px;
   cursor: pointer;
+}
+
+.search-button[disabled] {
+  background-color: #e5e5e5;
+}
+
+.search-button:hover,
+.search-button:focus-visible {
+  background-color: #68a2ca;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
