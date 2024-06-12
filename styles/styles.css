@@ -1713,6 +1713,15 @@ body {
   appearance: textfield;
 }
 
+.number-field:hover,
+.number-field:focus-visible  {
+  background-color: #e6e6e6;
+}
+
+.number-field:active  {
+  outline: 2px solid #000000;
+}
+
 .number-field::-webkit-outer-spin-button,
 .number-field::-webkit-inner-spin-button {
   appearance: none;
