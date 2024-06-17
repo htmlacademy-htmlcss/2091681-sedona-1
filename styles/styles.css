@@ -1537,8 +1537,8 @@ body {
   background-color: #f2f2f2;
   background-image: url("../images/date.svg");
   background-repeat: no-repeat;
-  background-position: 402px 16px;
-  padding: 12px 20px;
+  background-position: 400px 16px;
+  padding: 13px 21px 11px 20px;
   box-sizing: border-box;
   border: none;
 }
@@ -1628,7 +1628,7 @@ body {
 
 .number-label-group {
   justify-content: flex-end;
-  margin-right: 36px;
+  margin-right: 37px;
 }
 
 .tooltip {
@@ -1671,13 +1671,14 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 20px 24px 22px;
   border-radius: 10px;
   display: block;
-  width: 216px;
+  box-sizing: border-box;
+  width: 256px;
   position: absolute;
   top: 100%;
-  margin-top: 15px;
+  margin-top: 14px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1707,7 +1708,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 23px;
   text-align: center;
   background-color: #f2f2f2;
   padding: 12px 3px;
@@ -1811,6 +1812,7 @@ body {
   border-radius: 4px;
   text-transform: uppercase;
   width: 577px;
+  height: 60px;
   padding: 8px;
   cursor: pointer;
 }
