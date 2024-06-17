@@ -129,7 +129,7 @@ body {
   position: absolute;
   content: "";
   right: 16px;
-  bottom: -1px;
+  bottom: -2px;
   left: 16px;
   height: 2px;
   background-color: #756257;
