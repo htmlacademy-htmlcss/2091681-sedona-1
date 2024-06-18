@@ -71,7 +71,7 @@
             </li>
             <li class="advantages-item color-pale">
               <div class="description-element">
-                <h3 class="advantages-heading">Красивая<br> дорога</h3>
+                <h3 class="advantages-heading">Красивая<br>дорога</h3>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
@@ -100,19 +100,19 @@
             <li class="services-item color-light">
               <div class="description-element">
                 <h3 class="services-heading services-housing">Жильё</h3>
-                <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+                <p class="services-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </div>
             </li>
             <li class="services-item">
               <div class="description-element">
                 <h3 class="services-heading services-food">Еда</h3>
-                <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+                <p class="services-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="services-item color-light">
               <div class="description-element">
                 <h3 class="services-heading services-souvenirs">Сувениры</h3>
-                <p class="services-description">Не только китайского,<br> но и настоящего местного производства!</p>
+                <p class="services-description">Не только китайского,<br>но и настоящего местного производства!</p>
               </div>
             </li>
           </ul>
@@ -188,7 +188,7 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container"> <!--Для отключенияя модального окна добавить класс modal-close-->
+    <div class="modal-container modal-close"> <!--Для подключенияя модального окна убрать класс modal-close-->
       <div class="modal">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -200,12 +200,12 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="search-form-date">
-              <span class="date-label">Дата заезда:</span>
+              <span class="date-label">Дата Заезда:</span>
               <input class="date-field" type="text" name="date-field" value="27 апреля 2020" placeholder="Укажите дату" required>
             </label>
             <p class="error-message">Мы не можем отправить вас в прошлое.</p>
             <label class="search-form-date">
-              <span class="date-label">Дата выезда:</span>
+              <span class="date-label">Дата Выезда:</span>
               <input class="date-field" type="text" name="date-field" value="1 сентября 2023" placeholder="Укажите дату" required>
             </label>
             <p class="success-message">На эти даты есть свободные номера. Пока есть.</p>
@@ -221,8 +221,8 @@
                 </div>
               </div>
               <div class="number-block">
-                <label class="number-label number-label-group" for="number-input-children">
-                  <span class="number-label-children">Дети:</span>
+                <div class="number-label number-label-group">
+                  <label class="number-label-children"  for="number-input-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
                       <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,9 +230,9 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,<br>которые будут с вами, возраст<br>которых от 6 до 18 лет. Дети<br>до 6 лет размещаются<br>бесплатно.</span>
                   </span>
-                </label>
+                </div>
                 <div class="minus-plus-block">
                   <button class="number-minus" type="button"><span class="visually-hidden">Уменьшите количество</span></button>
                   <input class="number-field" type="number" name="number" min="1" value="2" id="number-input-children" required>
