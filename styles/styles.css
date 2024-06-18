@@ -577,6 +577,11 @@ body {
   outline: 2px solid #000000;
 }
 
+.subscribe-field[disabled] {
+  opacity: 0.3;
+  background-color: #f2f2f2;
+}
+
 .subscribe-button {
   display: inline-block;
   font-family: inherit;
@@ -609,6 +614,7 @@ body {
 
 .subscribe-button[disabled] {
   background-color: #e5e5e5;
+  cursor: auto;
 }
 
 .page-footer {
@@ -866,6 +872,10 @@ body {
   opacity: 0.3;
 }
 
+.control-element[disabled] {
+  opacity: 0.3;
+}
+
 .control-input-infrastructure {
   width: 20px;
   height: 20px;
@@ -974,6 +984,12 @@ body {
   outline: 2px solid #000000;
 }
 
+.control-input-cost[disabled] {
+  opacity: 0.3;
+  background-color: #f2f2f2;
+}
+
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -1007,6 +1023,11 @@ body {
 
 .range-toggle:active {
   outline: 3px solid #82b3d3;
+}
+
+.range-toggle[disabled] {
+  cursor: auto;
+  outline: none;
 }
 
 .toggle-min {
@@ -1354,7 +1375,7 @@ body {
   text-align: center;
 }
 
-.product-starsbox {
+.product-stars-box {
   width: 140px;
   height: 37px;
 }
@@ -1501,6 +1522,15 @@ body {
   fill: rgba(0,0,0,0.3);
 }
 
+.modal-close-button[disabled] {
+  background-color: #f2f2f2;
+  cursor: auto;
+}
+
+.modal-close-button[disabled] .close-button-icon {
+  fill: rgba(0,0,0,0.3);
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1554,6 +1584,12 @@ body {
 .date-field:active  {
   outline: 2px solid #000000;
 }
+
+.date-field[disabled]  {
+  opacity: 0.3;
+  background-color: #f2f2f2;
+}
+
 
 .date-search {
   width: 60px;
@@ -1706,6 +1742,14 @@ body {
   display: block;
 }
 
+.tooltip-toggle[disabled] {
+  opacity: 0.6;
+}
+
+.tooltip-toggle[disabled] + .tooltip-text {
+  display: none;
+}
+
 .number-field {
   width: 30px;
   font-family: inherit;
@@ -1728,6 +1772,12 @@ body {
 
 .number-field:active  {
   outline: 2px solid #000000;
+}
+
+
+.number-field[disabled]  {
+  opacity: 0.3;
+  background-color: #f2f2f2;
 }
 
 .number-field::-webkit-outer-spin-button,
@@ -1782,6 +1832,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.number-minus[disabled].number-minus::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .number-plus::after {
   content: "";
   position: absolute;
@@ -1803,6 +1857,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.number-plus[disabled]::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .search-button {
   display: inline-block;
   font-family: inherit;
@@ -1820,10 +1878,6 @@ body {
   cursor: pointer;
 }
 
-.search-button[disabled] {
-  background-color: #e5e5e5;
-}
-
 .search-button:hover,
 .search-button:focus-visible {
   background-color: #68a2ca;
@@ -1831,4 +1885,11 @@ body {
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+
+.search-button[disabled] {
+  background-color: #e5e5e5;
+  color: #ffffff;
+  cursor: auto;
 }
