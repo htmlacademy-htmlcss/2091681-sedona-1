@@ -323,7 +323,7 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 60px 1px;
+  margin: 0 0 60px 0;
   position: relative;
   text-align: center;
 
@@ -635,10 +635,10 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   display: block;
-  width: 47px;
+  width: 46px;
   height: 40px;
   box-sizing: border-box;
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .socials-link:hover svg {
@@ -654,17 +654,20 @@ body {
 }
 
 .socials-vk {
-  padding: 11px 14px 12px 11px;
+  padding: 11px 10px 12px 11px;
+  margin-right: 2px;
   fill: #82b3d3;
 }
 
 .socials-telegram {
-  padding: 12px 19px 12px 12px;
+  padding: 12px 14px 12px 14px;
+  margin-right: 2px;
   fill: #82b3d3;
 }
 
 .socials-youtube {
-  padding: 11px 19px 11px 7px;
+  padding: 11px 11px 11px 12px;
+  margin-right: 2px;
   fill: #82b3d3;
 }
 
@@ -738,7 +741,7 @@ body {
 
 .breadcrumbs {
   display: flex;
-  flex-wrap: wrappx;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1214,8 +1217,8 @@ body {
 }
 
 .product-title {
-
   flex-shrink: 1;
+  font-size: 24px;
   margin: 0;
 }
 
@@ -1277,7 +1280,7 @@ body {
 
 .product-more:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: 756157;
+  background-color: #756157;
 }
 
 .product-more[disabled] {
@@ -1401,7 +1404,7 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   text-align: center;
-  padding: 11px 12px 13PX;
+  padding: 11px 12px 13px;
   border-radius: 4px;
 }
 
