@@ -323,7 +323,7 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 60px 1px;
+  margin: 0 0 60px 0;
   position: relative;
   text-align: center;
 
@@ -577,6 +577,11 @@ body {
   outline: 2px solid #000000;
 }
 
+.subscribe-field[disabled] {
+  opacity: 0.3;
+  background-color: #f2f2f2;
+}
+
 .subscribe-button {
   display: inline-block;
   font-family: inherit;
@@ -609,6 +614,7 @@ body {
 
 .subscribe-button[disabled] {
   background-color: #e5e5e5;
+  cursor: auto;
 }
 
 .page-footer {
@@ -635,10 +641,10 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   display: block;
-  width: 47px;
+  width: 46px;
   height: 40px;
   box-sizing: border-box;
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .socials-link:hover svg {
@@ -654,17 +660,20 @@ body {
 }
 
 .socials-vk {
-  padding: 11px 14px 12px 11px;
+  padding: 11px 10px 12px 11px;
+  margin-right: 2px;
   fill: #82b3d3;
 }
 
 .socials-telegram {
-  padding: 12px 19px 12px 12px;
+  padding: 12px 14px 12px 14px;
+  margin-right: 2px;
   fill: #82b3d3;
 }
 
 .socials-youtube {
-  padding: 11px 19px 11px 7px;
+  padding: 11px 11px 11px 12px;
+  margin-right: 2px;
   fill: #82b3d3;
 }
 
@@ -738,7 +747,7 @@ body {
 
 .breadcrumbs {
   display: flex;
-  flex-wrap: wrappx;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -863,6 +872,10 @@ body {
   opacity: 0.3;
 }
 
+.control-element[disabled] {
+  opacity: 0.3;
+}
+
 .control-input-infrastructure {
   width: 20px;
   height: 20px;
@@ -971,6 +984,12 @@ body {
   outline: 2px solid #000000;
 }
 
+.control-input-cost[disabled] {
+  opacity: 0.3;
+  background-color: #f2f2f2;
+}
+
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -1004,6 +1023,11 @@ body {
 
 .range-toggle:active {
   outline: 3px solid #82b3d3;
+}
+
+.range-toggle[disabled] {
+  cursor: auto;
+  outline: none;
 }
 
 .toggle-min {
@@ -1214,8 +1238,8 @@ body {
 }
 
 .product-title {
-
   flex-shrink: 1;
+  font-size: 24px;
   margin: 0;
 }
 
@@ -1277,7 +1301,7 @@ body {
 
 .product-more:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: 756157;
+  background-color: #756157;
 }
 
 .product-more[disabled] {
@@ -1351,7 +1375,7 @@ body {
   text-align: center;
 }
 
-.product-starsbox {
+.product-stars-box {
   width: 140px;
   height: 37px;
 }
@@ -1401,7 +1425,7 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   text-align: center;
-  padding: 11px 12px 13PX;
+  padding: 11px 12px 13px;
   border-radius: 4px;
 }
 
@@ -1498,6 +1522,15 @@ body {
   fill: rgba(0,0,0,0.3);
 }
 
+.modal-close-button[disabled] {
+  background-color: #f2f2f2;
+  cursor: auto;
+}
+
+.modal-close-button[disabled] .close-button-icon {
+  fill: rgba(0,0,0,0.3);
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1551,6 +1584,12 @@ body {
 .date-field:active  {
   outline: 2px solid #000000;
 }
+
+.date-field[disabled]  {
+  opacity: 0.3;
+  background-color: #f2f2f2;
+}
+
 
 .date-search {
   width: 60px;
@@ -1703,6 +1742,14 @@ body {
   display: block;
 }
 
+.tooltip-toggle[disabled] {
+  opacity: 0.6;
+}
+
+.tooltip-toggle[disabled] + .tooltip-text {
+  display: none;
+}
+
 .number-field {
   width: 30px;
   font-family: inherit;
@@ -1725,6 +1772,12 @@ body {
 
 .number-field:active  {
   outline: 2px solid #000000;
+}
+
+
+.number-field[disabled]  {
+  opacity: 0.3;
+  background-color: #f2f2f2;
 }
 
 .number-field::-webkit-outer-spin-button,
@@ -1779,6 +1832,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.number-minus[disabled].number-minus::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .number-plus::after {
   content: "";
   position: absolute;
@@ -1800,6 +1857,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.number-plus[disabled]::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .search-button {
   display: inline-block;
   font-family: inherit;
@@ -1817,10 +1878,6 @@ body {
   cursor: pointer;
 }
 
-.search-button[disabled] {
-  background-color: #e5e5e5;
-}
-
 .search-button:hover,
 .search-button:focus-visible {
   background-color: #68a2ca;
@@ -1828,4 +1885,11 @@ body {
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+
+.search-button[disabled] {
+  background-color: #e5e5e5;
+  color: #ffffff;
+  cursor: auto;
 }
